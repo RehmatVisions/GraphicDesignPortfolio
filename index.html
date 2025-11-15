@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio | Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar" role="navigation">
+            <div class="nav-container">
+                <!-- Brand Logo -->
+                <a href="#home" class="nav-brand">
+                    <i class="fas fa-palette"></i>
+                    <span>Tahira Sani</span>
+                </a>
+                
+                <!-- Hamburger Menu Button -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="nav-toggle-icon"></span>
+                    <span class="nav-toggle-icon"></span>
+                    <span class="nav-toggle-icon"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">
+                                <i class="fas fa-user"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">
+                                <i class="fas fa-code"></i>
+                                <span>Skills</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#certifications" class="nav-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certifications</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link">
+                                <i class="fas fa-building"></i>
+                                <span>Experience</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">
+                                <i class="fas fa-folder-open"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#testimonials" class="nav-link">
+                                <i class="fas fa-comments"></i>
+                                <span>Testimonials</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="assets/dp.jpg" alt="Tahira Sani - Graphic Designer" class="profile-image">
+                <div class="profile-glow"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="wave">👋</span> Hi, I'm <span class="highlight">Tahira Sani</span>
+            </h1>
+            <p class="hero-subtitle">A Creative Graphic Designer & Visual Storyteller</p>
+            <div class="hero-icons">
+                <div class="floating-icon"><i class="fas fa-palette"></i></div>
+                <div class="floating-icon"><i class="fas fa-pen-nib"></i></div>
+                <div class="floating-icon"><i class="fas fa-magic"></i></div>
+                <div class="floating-icon"><i class="fas fa-lightbulb"></i></div>
+            </div>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/side.jpg" alt="Tahira Sani - About" class="circular-image">
+                </div>
+                <div class="about-text">
+                    <p class="about-description">
+                        I am a passionate and creative graphic designer with 2 years of experience in translating ideas into stunning designs. 
+                        My work is a reflection of my commitment to excellence, attention to detail, and a deep understanding of design principles. 
+                        I thrive on turning concepts into compelling visual stories that resonate with audiences.
+                    </p>
+                    <div class="fun-facts">
+                        <div class="fact-item">
+                            <span class="fact-number" data-target="150">0</span>
+                            <span class="fact-label">Projects</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-number" data-target="80">0</span>
+                            <span class="fact-label">Clients</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-number" data-target="25">0</span>
+                            <span class="fact-label">Awards</span>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/tahirasani" target="_blank" class="download-btn" style="display: inline-block; text-decoration: none;">
+                        <i class="fas fa-external-link-alt"></i> View Behance Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-adobe"></i></div>
+                    <h3>Photoshop</h3>
+                    <div class="skill-progress">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#ff69b4" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="95"/>
+                        </svg>
+                        <span class="progress-text">95%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-adobe"></i></div>
+                    <h3>Illustrator</h3>
+                    <div class="skill-progress">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#ff69b4" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="90"/>
+                        </svg>
+                        <span class="progress-text">90%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                    <h3>Figma</h3>
+                    <div class="skill-progress">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#ff69b4" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="88"/>
+                        </svg>
+                        <span class="progress-text">88%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-video"></i></div>
+                    <h3>After Effects</h3>
+                    <div class="skill-progress">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#ff69b4" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="85"/>
+                        </svg>
+                        <span class="progress-text">85%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">Transforming ideas into stunning visual experiences</p>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Creating unique and memorable logos that capture your brand's essence and make a lasting impression</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Branding & Identity</h3>
+                    <p>Developing comprehensive brand identities including color palettes, typography, and visual guidelines</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Illustration</h3>
+                    <p>Custom digital illustrations and artwork that bring your creative vision to life with unique style</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and beautiful user interfaces that enhance user experience and engagement</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Print Design</h3>
+                    <p>Creating stunning print materials including brochures, business cards, posters, and marketing collateral</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Social Media Graphics</h3>
+                    <p>Designing eye-catching social media content that boosts engagement and strengthens your online presence</p>
+                    <div class="service-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-flowers">
+            <div class="flower flower-1"></div>
+            <div class="flower flower-2"></div>
+            <div class="flower flower-3"></div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">Graphic Designer Expert</h2>
+            <div class="certifications-grid">
+                <div class="cert-card" data-aos="fade-up">
+                    <div class="cert-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Expert in creating visually appealing designs with attention to detail and design principles</p>
+                    <div class="cert-glow"></div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Illustration</h3>
+                    <p>Skilled in creating custom illustrations and visual elements for diverse projects</p>
+                    <div class="cert-glow"></div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-font"></i>
+                    </div>
+                    <h3>Typography</h3>
+                    <p>Proficient in typography design and creating compelling text-based visual compositions</p>
+                    <div class="cert-glow"></div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Experienced in photography and photo editing for professional design projects</p>
+                    <div class="cert-glow"></div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cert-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Layout & Composition</h3>
+                    <p>Expert in layout design and composition for print and digital media</p>
+                    <div class="cert-glow"></div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="cert-icon">
+                        <i class="fas fa-copyright"></i>
+                    </div>
+                    <h3>Branding & Identity</h3>
+                    <p>Specialized in creating cohesive brand identities and visual branding materials</p>
+                    <div class="cert-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="neon-lines"></div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="experience-item current" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Graphic Designer</h3>
+                            <span class="current-badge">Current</span>
+                        </div>
+                        <h4>DevelopersHub Corporation</h4>
+                        <p class="duration">2024 - Present</p>
+                        
+                        <!-- Featured Project Highlight -->
+                        <div class="featured-project-highlight">
+                            <div class="project-badge">
+                                <i class="fas fa-star"></i> Featured Project
+                            </div>
+                            <h5 class="project-title">High-Rise Apartment Poster Design</h5>
+                            <div class="project-descriptions">
+                                <p class="project-desc">
+                                    <i class="fas fa-check-circle"></i>
+                                    Showcasing modern high-rise apartments with a focus on elegant design, smart space planning, and urban living. My work reflects clean layouts, premium visuals, and professional presentation—perfect for real estate marketing.
+                                </p>
+                                <p class="project-desc">
+                                    <i class="fas fa-check-circle"></i>
+                                    Designed on Canva with a clean and modern layout, this poster highlights premium high-rise apartments through elegant visuals, balanced composition, and a professional real-estate look.
+                                </p>
+                                <p class="project-desc">
+                                    <i class="fas fa-check-circle"></i>
+                                    A sleek Canva-crafted design showcasing luxury high-rise apartments with modern graphics, smooth alignment, and a polished real-estate aesthetic.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Key Responsibilities -->
+                        <div class="responsibilities-section">
+                            <h5 class="responsibilities-title">Key Responsibilities</h5>
+                            <ul class="experience-list">
+                                <li>Designed professional marketing materials including high-rise apartment posters, real estate brochures, and promotional content</li>
+                                <li>Created modern, elegant designs with smart space planning concepts for urban living projects</li>
+                                <li>Developed clean layouts with premium visuals and professional presentation for real estate marketing campaigns</li>
+                                <li>Utilized Canva and Adobe Creative Suite to craft polished designs with balanced composition and professional aesthetic</li>
+                                <li>Collaborated with development team to deliver luxury apartment showcases with modern graphics and smooth alignment</li>
+                            </ul>
+                        </div>
+                        <div class="experience-glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-timeline">
+                <h3 class="education-title">Education</h3>
+                <div class="education-item" data-aos="fade-up">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>Student</h4>
+                        <p class="institution">Virtual University of Pakistan (VU), Lahore, Punjab, Pakistan</p>
+                        <p class="edu-description">Currently pursuing higher education with focus on academic excellence and professional development</p>
+                    </div>
+                </div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>Senior High School</h4>
+                        <p class="institution">Islamia College Lahore Cantt</p>
+                        <p class="edu-description">Completed senior secondary education with strong academic foundation</p>
+                    </div>
+                </div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>Junior High School</h4>
+                        <p class="institution">City District Girls High School Lahore</p>
+                        <p class="edu-description">Built fundamental academic skills and creative interests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle">A showcase of my creative work and design projects</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="illustration">Illustration</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.21_8c5a0150.jpg" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>High-Rise Apartment Poster</h3>
+                        <p>Real estate marketing design for DevelopersHub Corp</p>
+                        <button class="view-project" data-project="1">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.21_f8e04233.jpg" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Graphic Design</h3>
+                        <p>Modern visual design</p>
+                        <button class="view-project" data-project="2">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.24_0a1f971c.jpg" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Illustration Work</h3>
+                        <p>Custom illustration design</p>
+                        <button class="view-project" data-project="3">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.24_0cf71a63.jpg" alt="Project 4">
+                    <div class="portfolio-overlay">
+                        <h3>Logo Design</h3>
+                        <p>Professional logo creation</p>
+                        <button class="view-project" data-project="4">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.24_54b0013c.jpg" alt="Project 5">
+                    <div class="portfolio-overlay">
+                        <h3>Visual Design</h3>
+                        <p>Creative visual concept</p>
+                        <button class="view-project" data-project="5">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.24_5588c2f5.jpg" alt="Project 6">
+                    <div class="portfolio-overlay">
+                        <h3>Digital Art</h3>
+                        <p>Artistic illustration work</p>
+                        <button class="view-project" data-project="6">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.24_999bf035.jpg" alt="Project 7">
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity</h3>
+                        <p>Complete brand package</p>
+                        <button class="view-project" data-project="7">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.24_aad18cda.jpg" alt="Project 8">
+                    <div class="portfolio-overlay">
+                        <h3>Design Project</h3>
+                        <p>Innovative design solution</p>
+                        <button class="view-project" data-project="8">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.25_b18a81a8.jpg" alt="Project 9">
+                    <div class="portfolio-overlay">
+                        <h3>Illustration Series</h3>
+                        <p>Creative illustration set</p>
+                        <button class="view-project" data-project="9">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.25_df2d6b4a.jpg" alt="Project 10">
+                    <div class="portfolio-overlay">
+                        <h3>Branding Work</h3>
+                        <p>Professional branding</p>
+                        <button class="view-project" data-project="10">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.25_fd823752.jpg" alt="Project 11">
+                    <div class="portfolio-overlay">
+                        <h3>Creative Design</h3>
+                        <p>Unique design approach</p>
+                        <button class="view-project" data-project="11">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <img src="assets/WhatsApp Image 2025-11-15 at 17.51.27_69928640.jpg" alt="Project 12">
+                    <div class="portfolio-overlay">
+                        <h3>Artistic Work</h3>
+                        <p>Custom artwork design</p>
+                        <button class="view-project" data-project="12">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Achievements & Recognition</h2>
+            <p class="section-subtitle">Certified excellence and professional recognition</p>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-aos="zoom-in">
+                    <div class="achievement-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Professional Certificate</h3>
+                    <p>Certified graphic design professional with proven expertise</p>
+                    <button class="view-achievement" data-image="assets/certificate.jpg">
+                        <i class="fas fa-eye"></i> View Certificate
+                    </button>
+                </div>
+                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="achievement-badge">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Offer Letter</h3>
+                    <p>Professional recognition and career milestone achievement</p>
+                    <button class="view-achievement" data-image="assets/offerletter.jpg">
+                        <i class="fas fa-eye"></i> View Offer Letter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Modal -->
+    <div class="achievement-modal" id="achievementModal">
+        <div class="achievement-modal-content">
+            <button class="achievement-modal-close">&times;</button>
+            <img id="achievementImage" src="" alt="Achievement">
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Tahira delivered exceptional branding work for our startup. Her creative vision and attention to detail transformed our brand identity completely. She understood our requirements perfectly and exceeded all expectations with her professional approach and timely delivery."</p>
+                    <div class="client-info">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=ff69b4&color=fff&size=60" alt="Client" class="client-image">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, Digital Ventures</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Working with Tahira was an absolute pleasure! Her illustration work brought our children's book to life with vibrant colors and engaging characters. She's incredibly talented, responsive, and professional. Highly recommend her services!"</p>
+                    <div class="client-info">
+                        <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=9370db&color=fff&size=60" alt="Client" class="client-image">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Author & Publisher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Tahira's design skills are outstanding! She created stunning social media graphics and marketing materials that significantly boosted our engagement. Her creativity, professionalism, and ability to meet tight deadlines make her an invaluable asset."</p>
+                    <div class="client-info">
+                        <img src="https://ui-avatars.com/api/?name=Emma+Davis&background=ff1493&color=fff&size=60" alt="Client" class="client-image">
+                        <div>
+                            <h4>Emma Davis</h4>
+                            <p>Marketing Director, BrandCo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Exceptional logo design and brand identity work! Tahira took the time to understand our business values and created a logo that perfectly represents our company. Her creative process was collaborative and the final result exceeded our expectations."</p>
+                    <div class="client-info">
+                        <img src="https://ui-avatars.com/api/?name=James+Wilson&background=c71585&color=fff&size=60" alt="Client" class="client-image">
+                        <div>
+                            <h4>James Wilson</h4>
+                            <p>Founder, TechFlow Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        <label for="phone">Your Phone (Optional)</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send via WhatsApp</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:sanitahira7@gmail.com">sanitahira7@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+923224778268">+92 322 4778268</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.behance.net/tahirasani" target="_blank" class="social-link" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="https://www.linkedin.com/in/tahira-sani-3286b536b/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.fiverr.com/users/shahidsharif987/manage_gigs" target="_blank" class="social-link" title="Fiverr"><i class="fas fa-briefcase"></i></a>
+                        <a href="https://github.com/TahiraSani0903" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923224778268?text=Hi%20Tahira!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Chat on WhatsApp"
+       title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2 id="modalTitle">Project Title</h2>
+                <img id="modalImage" src="" alt="Project">
+                <p id="modalDescription">Project description goes here...</p>
+                <div class="modal-tools">
+                    <span class="tool-tag">Photoshop</span>
+                    <span class="tool-tag">Illustrator</span>
+                </div>
+                <a href="#" class="modal-link">View Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tahira Sani</h3>
+                    <p>Graphic Designer & Visual Storyteller</p>
+                    <p>Transforming ideas into stunning visual experiences</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li>Logo Design</li>
+                        <li>Branding & Identity</li>
+                        <li>Illustration</li>
+                        <li>UI/UX Design</li>
+                        <li>Print Design</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="mailto:sanitahira7@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+923224778268" title="Phone"><i class="fas fa-phone"></i></a>
+                        <a href="https://www.behance.net/tahirasani" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="https://www.linkedin.com/in/tahira-sani-3286b536b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.fiverr.com/users/shahidsharif987/manage_gigs" target="_blank" title="Fiverr"><i class="fas fa-briefcase"></i></a>
+                        <a href="https://github.com/TahiraSani0903" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tahira Sani. All rights reserved. | Designed with <i class="fas fa-heart"></i> by Tahira Sani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
